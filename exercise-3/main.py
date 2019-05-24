@@ -25,7 +25,7 @@ criterion = nn.CrossEntropyLoss()
 accuracy = Accuracy()
 
 model.train()
-for epoch in range(1):
+for epoch in range(5):
     accuracy.reset()
 
     print("Starting epoch {}".format(epoch+1))
