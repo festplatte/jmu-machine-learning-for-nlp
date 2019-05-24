@@ -2,7 +2,7 @@ import numpy as np
 from pathlib import Path
 import nltk
 import re
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset
 import torch
 
 # nltk.download('punkt')
@@ -44,13 +44,3 @@ class ImdbDataset(Dataset):
                 pass
 
         return torch.from_numpy(review_input).float(), review_label
-
-
-dataset = ImdbDataset('./imdb-data/train')
-data_loader = DataLoader(dataset, batch_size=512, shuffle=True, num_workers=2)
-
-for data in data_loader:
-    inputs, labels = data
-
-print(inputs)
-print(labels)
