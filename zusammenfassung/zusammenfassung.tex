@@ -238,7 +238,6 @@
 	Wie kann Text (Wörter, Buchstaben) für NLP-Tasks mit neuronalen Netzen repräsentiert werden?\\
 	\textbf{Dokument} beschreibt eine Menge an Text, z.B. Satz, Tweet, Buch, etc.\\
 	\textbf{Vokabular} alle möglichen Wörter in einem bestimmten Kontext (z.B. Duden für deutsche Sprache)\\
-	\textbf{Word Embedding} Vektor, der ein Wort repräsentiert\\
 	\textbf{Bag of Words} simpler Ansatz, Vektor der für jedes Wort des Vokabulars einen Wert beinhaltet, Anzahl der Worthäufigkeit im Dokument, Reihenfolge der Wörter im Dokument wird nicht betrachtet\\
 	$\rightarrow$ funktioniert gut, aber verliert viel Information über Kontext\\
 	\textbf{One-hot-vector} repräsentiert ein Wort, Vektor hat einen Eintrag für jedes Wort des Vokabulars, Eintrag für zu repräsentierendes Wort ist 1 alle anderen 0\\
@@ -246,6 +245,8 @@
 	\textbf{Cosine-Similarity} Ähnlichkeit von Wörtern über Cosinus Berechnen
 	$$sim_{cos}(x,y) = \frac{\sum_{i=1}^N x_i \cdot y_i}{\sqrt{\sum_{i=1}^N x_i^2} \cdot \sqrt{\sum_{i=1}^N y_i^2}}$$
 	\textbf{WordNet} handgelabelter Datensatz mit Ähnlichkeitsbeziehungen von Wörtern $\rightarrow$ nicht genau genug, unvollständig, menschlicher Bias\\
+	\textbf{Word Embedding} Vektor, der ein Wort repräsentiert. Bekannte Verfahren Embeddings zu erzeugen:\\
+	\includegraphics[width=\linewidth]{figures/word-embeddings.png}\\
 
 	\subsection{Word2Vec}
 	Annahme: Ähnliche Wörter kommen im ähnlichen Kontext vor d.h. sie sind in Texten häufig von den gleichen Wörtern umgeben.\\
@@ -255,6 +256,20 @@
 	\textbf{CBOW} Center Wort durch Kontextwörter vorhersagen\\
 	\textbf{Skip-gram} Kontextwörter durch Center Wort vorhersagen\\
 	\includegraphics[width=\linewidth]{figures/word2vec.png}
+
+	\subsection{GloVe (Global Vectors)}
+	Berechnung von Word Embeddings über eine Matrix $X$, die für einen Wortkorpus die Häufigkeiten angibt, mit der zwei Wörter zusammen auftreten. Verwendet globale Abhängigkeiten statt lokale wie bei Word2Vec.\\
+	Neue, unbekannte Wörter werden auf gleichen UNKNOWN-Vektor abgebildet (wie bei Word2Vec).
+
+	\subsection{FastText}
+	Funktioniert wie Word2Vec auf lokalem Kontext, aber verwendet Bustaben n-Gramme (Buchstabenketten der Länge $n$) statt ganze Wörter. Word Embeddings werden durch Aufsummieren der Vektoren ihrer n-Gramme erzeugt.\\
+	$\rightarrow$ kann neue Wörter besser abbilden, da n-Gramme vermutlich bekannt (z.B. bei konjugierten Verben)\\
+	\includegraphics[width=\linewidth]{figures/fasttext.png}
+
+	\subsection{Weltwissen}
+	Word Embeddings werden durch die vorgestellen Verfahren nur auf einen bestimmten Korpus angepasst. Menschen verstehen Sprache besser durch Einbeziehen von Hintergrundinformationen, sog. Weltwissen.\\
+	\textbf{Quelle für Weltwissen} ist z.B. Dbpedia (maschinenlesbare Form der Wikipedia), Wikidata, BabelNet, ConceptNet (verbindet Begriffe durch gewichtete, beschriftete Beziehungen/Kanten, z.B. Synonym, TeilVon, ...)\\
+	% TODO weiter mit Kapitel 4, Folie 26
 
 	\section{Sequence2Sequence}
 	Abbildung von Sequenzen auf Sequenzen, z.B. bei OCR (Eingabe: Pixelspalten, Ausgabe: Buchstabenklassifikation) oder Spracherkennung. Kann z.B. mit LSTMs umgesetzt werden.\\
