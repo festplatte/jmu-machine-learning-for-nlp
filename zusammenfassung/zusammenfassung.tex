@@ -53,9 +53,9 @@
 		\item Negative-Log-Likelihood, Cross-Entropy: $NLL = -\frac{1}{|D|}\sum_i \log[f_\theta(x_i)|_{t_i}]$
 	\end{itemize}
 	\textbf{Konfusionsmatrix} welche Klassen werden wie oft mit welcher Klasse verwechselt?\\
-	\textbf{Linearisiertes Speichern mehrdimensionaler Objekte}\\
-	\includegraphics[width=0.25\linewidth]{figures/row-column-major.png}\\
-
+	\textbf{Sentiment Analysis} Bewertung von Texten nach Gefühlsaussage des Autors (positiv, negativ, neutral)\\
+	\textbf{Text Generation} Führt vorgegebenen Text weiter. Perfekter Text Generator besteht Turing Test\\
+	\textbf{Machine Translation} machinelle Übersetzung\\
 	
 	\subsection{Training}
 	Daten werden aufgeteilt in Train/Validierung/Test (z.B. 60/20/20)\\
@@ -71,23 +71,45 @@
 	\includegraphics[width=\linewidth]{figures/backpropagation.png}\\
 	\textbf{Berechnung der Gewicht-Deltas} Bilden der partiellen Ableitung für jedes Gewicht jedes Layers und Speichern der Werte als Deltas. Zur Berechnung sind die Deltas der Outputs (siehe Backward-Pass) erforderlich. Für Batches werden die Deltas der Gewichte aufsummiert und nach dem Batch geupdated.\\
 	\includegraphics[width=\linewidth]{figures/calculate-delta-weights.png}\\
-	\textbf{Update der Gewichte} Die Gewichte werden nun geupdated, in dem die Deltas der Gewichte mit den ursprünglichen Gewichten verrechnet werden. Dafür gibt es verschiedene Optimierungsverfahren:
-	\begin{itemize}
-		\item Gradient Descent: für Gewicht $w'_{ij} = w_{ij} - \eta \cdot \delta w_{ij}$
-		\item Adam-Optimizer: robuster gegeüber schlecht gewählter Learning-Rate
-		\item Adagrad
-		\item RMSProp
-	\end{itemize}
-	\textbf{Regularisierung} Methoden um Overfitting vorzubeugen
+	\textbf{Update der Gewichte} Die Gewichte werden nun geupdated, in dem die Deltas der Gewichte mit den ursprünglichen Gewichten verrechnet werden. Dafür wird ein Optimierungsverfahren verwendet (siehe unten).\\
+	\textbf{Pre-Training} Verwende Startgewichte, die bereits auf ähnlichen Daten trainiert wurden $\rightarrow$ besser als zufällige Initialisierung.\\
+	\textbf{Transferlearning} Verwende vortrainiertes Netz und trainiere nur einzelne Schichten (z.B. letzte Schicht für Klassifikation) neu.
+
+	\subsection{Optimizer}
+	Optimierungsverfahren sind für das Update der Gewichte zuständig. Sie werden über die Learningrate $\eta$ eingestellt.\\
+	\textbf{Gradient Descent} für Gewicht:
+	$$w'_{ij} = w_{ij} - \eta \cdot \delta w_{ij}$$
+	\textbf{Momentum} simuliert Ball, der die Funktion nach unten rollt:
+	$$w_{ij}' = w_{ij} + (mu \cdot v - \eta \cdot \delta w_{ij})$$
+	mit $v$ aktuelle Ballgeschwindigkeit, $mu$ wie viel $v$ der Ball behalten soll\\
+	\textbf{Nesterov Momentum} verhindert hinauslaufen über Ziel (Minimum) (Problem bei Momentum) $\rightarrow$ verwende Lookahead für Gradient an nächster Position
+	$$w_{ij}' = w_{ij} + (mu \cdot v - \eta \cdot \frac{df}{dx}(w_{ij} + mu \cdot v))$$
+	\textbf{Adagrad} Verwendet Cache pro Parameter, um variable, sich optimierende Learningrate zu nutzen $\rightarrow$ kleinere Learningrate für große Gewichtsupdates und umgekehrt
+	$$cache_{ij} += \delta w_{ij}^2$$
+	$$w_{ij}' = w_{ij} -\frac{\eta}{\sqrt{cache_{ij}} + \epsilon} \cdot \delta w_{ij}$$
+	\textbf{RMSProp} Sanftere Learningrate/Cache-Anpassung als Adagrad. Update wie bei Adagrad.
+	$$cache_{ij}' = decayrate \cdot cache_{ij} + (1 - decayrate) \cdot \delta w_{ij}^2$$
+	\textbf{Adam-Optimizer} RMSProp mit Momentum, funktioniert oft am bestehen
+	$$m' = \beta_1 \cdot m + (1 - \beta_1) \cdot \delta w_{ij}$$
+	$$v' = \beta_2 \cdot v + (1 - \beta_2) \cdot \delta w_{ij}^2$$
+	$$w_{ij}' = w_{ij} -\frac{\eta}{\sqrt{v'} + \epsilon} \cdot m'$$
+
+	\subsection{Regularisierung}
+	Methoden um Overfitting vorzubeugen
 	\begin{itemize}
 		\item Rauschen auf Eingabedaten, Gewichten, Ausgabe (Zufallswerte hinzufügen)
 		\item Datenaugmentierung
 		\item Early-Stopping: Laufende Validierung auf Validierungsset, Trainingsabbruch wenn Accuracy abnimmt
 		\item Dropout (siehe Layer)
-		
 	\end{itemize}
-	\textbf{Pre-Training} Verwende Startgewichte, die bereits auf ähnlichen Daten trainiert wurden $\rightarrow$ besser als zufällige Initialisierung.\\
-	\textbf{Transferlearning} Verwende vortrainiertes Netz und trainiere nur einzelne Schichten (z.B. letzte Schicht für Klassifikation) neu.
+	\textbf{L2 Regularisierung} Zusatzterm in Lossfunktion: $L_{reg} = L + \frac{1}{2} \lambda \sum_w w^2$\\
+	\textbf{Weight Decay} Zusatzterm zur Ableitung der Lossfunktion
+
+	\subsection{Initializer}
+	Es gibt mehrere Ansätze die Gewichte vor dem Training initial zu belegen.\\
+	\textbf{Random} zufällige Belegung $\rightarrow$ Normalisierung mit Anzahl der Gewichte $n$: $x = \frac{random}{\sqrt{n}}$\\
+	\textbf{Glorot/Xavier} Funktioniert am besten für Sigmoid oder Tanh Aktivierung: $x = \frac{random}{\sqrt{\frac{2}{n_{in} + n_{out}}}}$\\
+	\textbf{He/Kaiming} Funktioniert am besten für ReLU Aktivierung: $x = \frac{random}{\sqrt{\frac{2}{n_{in}}}}$\\
 
 	\subsection{Netzarchitektur}
 	\textbf{Perceptron} (= künstliches Neuron) stellt lineare Trennung (binäre Klassifikation) dar. Kann Funktionen AND, OR und NOT lernen, nicht aber XOR.\\
@@ -96,6 +118,8 @@
 	$$Ausgabe_{Schicht(x)} = g(Eingabe_{Schicht(x)} \cdot W + b) = Eingabe_{Schicht(x+1)}$$
 	\textbf{Aktivierungsfunktion} muss bei Multi-Layer-Perceptronen (MLP) nicht-linear sein, da sonst nicht mehr Information gespeichert werden kann.
 	$$(x \cdot W + b) \cdot V + a = x \cdot W \cdot V + b \cdot V + a = x \cdot W' + b'$$
+	\textbf{Circuit Diagram} Darstellung eines neuronalen Netz als Graph mit Basis-Rechenoperationen. Kann für Forward- und Backwardpass verwendet werden.\\
+	\includegraphics[width=\linewidth]{figures/circuit-diagram.png}\\
 
 	\section{Layer}
 	Mögliche Schichten aus denen ein neuronales Netz bestehen kann.
@@ -210,26 +234,27 @@
 	\textbf{Forward-Pass} $$L = \sum_i \frac{1}{2} (x_i - t_i)^2$$
 	\textbf{Backward-Pass} $$\frac{\delta L}{\delta x_i} = x_i - t_i$$
 
-	\section{Bildverarbeitung}
-	\includegraphics[width=\linewidth]{figures/bildverarbeitung.png}
-	\subsection{Klassifizierung}
-	In der Regel neuronales Netz mit Convolution und Fully Connected Layern, das das gesamte Bild als Eingabe bekommt.
-	\subsection{Segmentierung}
-	Zuweisung einer Klasse für jeden Pixel eines Bildes.\\
-	\textbf{Sliding Window} Klassifizere kleinere Bildausschnitte. Probleme: Keine Flächen (benachbarte Vorhersagen haben keinen direkten Einfluss), Auflösung wird niedriger durch CNN, kleiner Stride führt zu Mehrfachberechnung\\
-	\textbf{Fully Convolution Network} CNN als Encoder, das Größe verkleinert. Anschließend hochskalieren (Decoder) $\rightarrow$ schnell aber ungenau\\
-	\textbf{Skip Connections} Addieren/Konkatinieren mit Werten aus vorherigen Layern\\
-	\includegraphics[width=\linewidth]{figures/skip-connections.png}\\
-	\textbf{Transposed Convolution} Anwenden der transponierten Convolution zur Bildvergrößerung (wie im Backward-Pass der regulären Convolution)\\
-	\includegraphics[width=\linewidth]{figures/transposed-convolution.png}\\
-	\textbf{Unpooling} Umkehren des Poolings analog zum Backward-Pass (z.B. bei Max-Pooling bekommt das ursprüngliche Maximum alles). Kann nur mit einer Pooling-Schicht verwendet werden, die umgekehrt werden soll $\rightarrow$ Alternative zum Upsampling
-	\subsection{Objekterkennung}
-	\textbf{Single Shot Detector} Definiere Standard Bounding Boxes (BB) im Bild. Netwerk soll Klasse und Abweichung von einer Standard BB angeben.
-	$$L = \frac{1}{N} (L_{conf} + \alpha L_{loc})$$
-	mit $L_{conf}$ als Cross-Entropy über die Klassen und $L_{loc} = - \sum_n^N smooth_{l_1}(l_n - g_n)$\\
-	\includegraphics[width=\linewidth]{figures/single-shot-detector.png}\\
-	\textbf{Multi Object Detection} mehrere BBs (ca. 4) pro Pixel. BB gilt als gematched, wenn Flächeninhalt der Vorhersage mit BB zu z.B. 50 Prozent übereinstimmt.\\
-	\textbf{Non-Maximum Suppression} Da oft mehrere BBs matchen, suche BB mit höchster Konfidenz und lösche alle BBs, die z.B. mind. 50 Prozent Overlapping haben. Wiederhole, bis keine BBs mehr gelöscht wurden.
+	\section{Textrepräsentation}
+	Wie kann Text (Wörter, Buchstaben) für NLP-Tasks mit neuronalen Netzen repräsentiert werden?\\
+	\textbf{Dokument} beschreibt eine Menge an Text, z.B. Satz, Tweet, Buch, etc.\\
+	\textbf{Vokabular} alle möglichen Wörter in einem bestimmten Kontext (z.B. Duden für deutsche Sprache)\\
+	\textbf{Word Embedding} Vektor, der ein Wort repräsentiert\\
+	\textbf{Bag of Words} simpler Ansatz, Vektor der für jedes Wort des Vokabulars einen Wert beinhaltet, Anzahl der Worthäufigkeit im Dokument, Reihenfolge der Wörter im Dokument wird nicht betrachtet\\
+	$\rightarrow$ funktioniert gut, aber verliert viel Information über Kontext\\
+	\textbf{One-hot-vector} repräsentiert ein Wort, Vektor hat einen Eintrag für jedes Wort des Vokabulars, Eintrag für zu repräsentierendes Wort ist 1 alle anderen 0\\
+	$\rightarrow$ Reihenfolge durch Sequenz von one-hot-vectors abbildbar, aber Ähnlichkeiten von Wörtern werden nicht berücksichtigt\\
+	\textbf{Cosine-Similarity} Ähnlichkeit von Wörtern über Cosinus Berechnen
+	$$sim_{cos}(x,y) = \frac{\sum_{i=1}^N x_i \cdot y_i}{\sqrt{\sum_{i=1}^N x_i^2} \cdot \sqrt{\sum_{i=1}^N y_i^2}}$$
+	\textbf{WordNet} handgelabelter Datensatz mit Ähnlichkeitsbeziehungen von Wörtern $\rightarrow$ nicht genau genug, unvollständig, menschlicher Bias\\
+
+	\subsection{Word2Vec}
+	Annahme: Ähnliche Wörter kommen im ähnlichen Kontext vor d.h. sie sind in Texten häufig von den gleichen Wörtern umgeben.\\
+	Berechnung von Word Embeddings (feste Länge) anhand der häufig dieses Wort umgebenden Wörter $\rightarrow$ ähnliche Wörter bekommen ähnliche Vektoren\\
+	Word2Vec wird selbst auf Beispieltexten trainiert\\
+	\includegraphics[width=\linewidth]{figures/word2vec-nn.png}\\
+	\textbf{CBOW} Center Wort durch Kontextwörter vorhersagen\\
+	\textbf{Skip-gram} Kontextwörter durch Center Wort vorhersagen\\
+	\includegraphics[width=\linewidth]{figures/word2vec.png}
 
 	\section{Sequence2Sequence}
 	Abbildung von Sequenzen auf Sequenzen, z.B. bei OCR (Eingabe: Pixelspalten, Ausgabe: Buchstabenklassifikation) oder Spracherkennung. Kann z.B. mit LSTMs umgesetzt werden.\\

@@ -1,251 +1,204 @@
-PWD c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung
-INPUT C:/Users/mg/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.tex
-OUTPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.log
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/article.cls
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/article.cls
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/size12.clo
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/size12.clo
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
-INPUT C:/Users/mg/AppData/Roaming/MiKTeX/2.9/tex/latex/answers/answers.sty
-INPUT C:/Users/mg/AppData/Roaming/MiKTeX/2.9/tex/latex/answers/answers.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/verbatim.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/verbatim.sty
-INPUT C:/Users/mg/AppData/Roaming/MiKTeX/2.9/tex/latex/setspace/setspace.sty
-INPUT C:/Users/mg/AppData/Roaming/MiKTeX/2.9/tex/latex/setspace/setspace.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphicx.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphicx.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/keyval.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/keyval.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphics.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphics.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/trig.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/trig.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics-cfg/graphics.cfg
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics-cfg/graphics.cfg
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics-def/pdftex.def
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics-def/pdftex.def
-INPUT C:/Users/mg/AppData/Roaming/MiKTeX/2.9/tex/latex/enumitem/enumitem.sty
-INPUT C:/Users/mg/AppData/Roaming/MiKTeX/2.9/tex/latex/enumitem/enumitem.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/multicol.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/multicol.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/jknappen/mathrsfs.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/jknappen/mathrsfs.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifvtex.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifvtex.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.cfg
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.cfg
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsmath.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsmath.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amstext.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amstext.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amscls/amsthm.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amscls/amsthm.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/amssymb.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/amssymb.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/amsfonts.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/amsfonts.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/babel/babel.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/babel/babel.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/babel/switch.def
-INPUT C:/Users/mg/AppData/Roaming/MiKTeX/2.9/tex/latex/arabi/bblopts.cfg
-INPUT C:/Users/mg/AppData/Roaming/MiKTeX/2.9/tex/latex/arabi/bblopts.cfg
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/babel-german/ngerman.ldf
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/babel-german/ngerman.ldf
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/babel-german/ngermanb.ldf
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/babel/babel.def
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/babel/txtbabel.def
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.aux
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.aux
-OUTPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.aux
-INPUT C:/Users/mg/AppData/Roaming/MiKTeX/2.9/tex/context/base/supp-pdf.mkii
-INPUT C:/Users/mg/AppData/Roaming/MiKTeX/2.9/tex/context/base/supp-pdf.mkii
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/infwarerr.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/infwarerr.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/kvdefinekeys.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/kvdefinekeys.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ltxcmds.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ltxcmds.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/kvsetkeys.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/kvsetkeys.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/etexcmds.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/etexcmds.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifluatex.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifluatex.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/pdftexcmds.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/pdftexcmds.sty
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr17.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/jknappen/ursfs.fd
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/jknappen/ursfs.fd
-INPUT C:/Users/mg/AppData/Local/MiKTeX/2.9/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT C:/Users/mg/AppData/Local/MiKTeX/2.9/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT C:/Users/mg/AppData/Local/MiKTeX/2.9/fonts/tfm/public/rsfs/rsfs7.tfm
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/umsa.fd
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/umsa.fd
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/umsb.fd
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsfonts/umsb.fd
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr17.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.toc
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.toc
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr8.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr6.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi8.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi6.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy8.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy6.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT C:/Users/mg/AppData/Local/MiKTeX/2.9/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT C:/Users/mg/AppData/Local/MiKTeX/2.9/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT C:/Users/mg/AppData/Local/MiKTeX/2.9/fonts/tfm/public/rsfs/rsfs5.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-OUTPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.toc
-OUTPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.pdf
-INPUT C:/Users/mg/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/row-column-major.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/row-column-major.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/row-column-major.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/row-column-major.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/row-column-major.png
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/backpropagation.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/backpropagation.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/backpropagation.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/backpropagation.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/backpropagation.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/calculate-delta-weights.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/calculate-delta-weights.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/calculate-delta-weights.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/calculate-delta-weights.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/calculate-delta-weights.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/perceptron.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/perceptron.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/perceptron.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/perceptron.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/perceptron.png
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmti12.tfm
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/convolution.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/convolution.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/convolution.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/convolution.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/convolution.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/convolution-backward.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/convolution-backward.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/convolution-backward.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/convolution-backward.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/convolution-backward.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/max-pooling.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/max-pooling.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/max-pooling.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/max-pooling.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/max-pooling.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/vanilla-rnn.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/vanilla-rnn.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/vanilla-rnn.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/vanilla-rnn.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/vanilla-rnn.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/gru.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/gru.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/gru.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/gru.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/gru.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/lstm.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/lstm.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/lstm.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/lstm.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/lstm.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/bildverarbeitung.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/bildverarbeitung.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/bildverarbeitung.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/bildverarbeitung.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/bildverarbeitung.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/skip-connections.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/skip-connections.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/skip-connections.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/skip-connections.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/skip-connections.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/transposed-convolution.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/transposed-convolution.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/transposed-convolution.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/transposed-convolution.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/transposed-convolution.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/single-shot-detector.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/single-shot-detector.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/single-shot-detector.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/single-shot-detector.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/single-shot-detector.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/ctc-algorithmus.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/ctc-algorithmus.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/ctc-algorithmus.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/ctc-algorithmus.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/ctc-algorithmus.png
-INPUT c:/Users/mg/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.aux
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb
-INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+PWD /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.tex
+OUTPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.log
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/answers/answers.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/answers/answers.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.aux
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.aux
+OUTPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.aux
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.toc
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.toc
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+OUTPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.toc
+OUTPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.pdf
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/backpropagation.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/backpropagation.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/backpropagation.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/calculate-delta-weights.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/calculate-delta-weights.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/calculate-delta-weights.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/perceptron.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/perceptron.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/perceptron.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/circuit-diagram.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/circuit-diagram.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/circuit-diagram.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/convolution.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/convolution.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/convolution.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/convolution-backward.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/convolution-backward.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/convolution-backward.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/max-pooling.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/max-pooling.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/max-pooling.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/vanilla-rnn.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/vanilla-rnn.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/vanilla-rnn.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/gru.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/gru.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/gru.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/lstm.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/lstm.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/lstm.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/word2vec-nn.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/word2vec-nn.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/word2vec-nn.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/word2vec.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/word2vec.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/word2vec.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/ctc-algorithmus.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/ctc-algorithmus.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/ctc-algorithmus.png
+INPUT /mnt/medien/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.aux
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
