@@ -120,6 +120,9 @@
 	$$(x \cdot W + b) \cdot V + a = x \cdot W \cdot V + b \cdot V + a = x \cdot W' + b'$$
 	\textbf{Circuit Diagram} Darstellung eines neuronalen Netz als Graph mit Basis-Rechenoperationen. Kann für Forward- und Backwardpass verwendet werden.\\
 	\includegraphics[width=\linewidth]{figures/circuit-diagram.png}\\
+	\textbf{Prediction Temperature} Skaliert die Wahrscheinlichkeiten des Softmax. Wenn über Wahrscheinlichkeiten gesampled wird (z.B. bei Textgenerierung) können damit eher sichere oder eher unsichere Vorhersagen gemacht werden.
+	$$pred' = pred^{\frac{1}{temp}}$$
+	mit $temp \in [0,1]$
 
 	\section{Layer}
 	Mögliche Schichten aus denen ein neuronales Netz bestehen kann.
@@ -269,7 +272,17 @@
 	\subsection{Weltwissen}
 	Word Embeddings werden durch die vorgestellen Verfahren nur auf einen bestimmten Korpus angepasst. Menschen verstehen Sprache besser durch Einbeziehen von Hintergrundinformationen, sog. Weltwissen.\\
 	\textbf{Quelle für Weltwissen} ist z.B. Dbpedia (maschinenlesbare Form der Wikipedia), Wikidata, BabelNet, ConceptNet (verbindet Begriffe durch gewichtete, beschriftete Beziehungen/Kanten, z.B. Synonym, TeilVon, ...)\\
-	% TODO weiter mit Kapitel 4, Folie 26
+	\textbf{Pointwise mutual information} Treten zwei Wörter öfters zusammen auf als wenn sie unabhängig wären?
+	$$PMI(word_1, word_2) = \log_2 \frac{P(word_1, word_2)}{P(word_1)P(word_2)}$$
+	\textbf{ConceptNet Numberbatch} Anreichern von existierenden Embeddings (Word2Vec, GloVe oder FastText) mit Weltwissen aus ConceptNet $\rightarrow$ Abbildung durch neuronales Netz mit Retrofitting Loss-Funktion\\
+	\includegraphics[width=\linewidth]{figures/retrofitting.png}
+
+	\subsection{Evaluation}
+	Mehrere Word Embeddings können auf verschiedene Weise miteinander verglichen werden.\\
+	\textbf{Extrinsisch} Evaluation durch Verwenden in einem NLP-Task\\
+	\textbf{Intrinsisch} hand-annotierten Evaluationsdatensatz (Human Intuition Datasets HID, z.B. WS-353, MEN-3000, ...) mit Wortpaaren verwenden, der Ähnlichkeitsgrad vorhersagt, z.B. r(table, chair) $>$ r(duck, plane)\\
+	$\rightarrow$ Word Embeddings können auch auf HIDs nachtrainiert werden
+
 
 	\section{Sequence2Sequence}
 	Abbildung von Sequenzen auf Sequenzen, z.B. bei OCR (Eingabe: Pixelspalten, Ausgabe: Buchstabenklassifikation) oder Spracherkennung. Kann z.B. mit LSTMs umgesetzt werden.\\
@@ -284,5 +297,7 @@
 	\includegraphics[width=\linewidth]{figures/ctc-algorithmus.png}
 	$$P(l|x) = \sum_{\pi \in B^{-1}(l)} P(\pi|x)$$
 	mit $l$ als gewünschte Sequenz und $x$ als Netzausgabe\\
-	\textit{Loss}: Maximiere $P(l|x)$ bzw. minimiere $-\log(P(l|x))$\\	
+	\textit{Loss}: Maximiere $P(l|x)$ bzw. minimiere $-\log(P(l|x))$\\
+
+	% TODO weiter mit Kapitel 6
 \end{document}

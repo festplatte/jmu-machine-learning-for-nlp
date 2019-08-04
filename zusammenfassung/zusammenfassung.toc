@@ -24,4 +24,5 @@
 \contentsline {subsection}{\numberline {4.2}GloVe (Global Vectors)}{14}% 
 \contentsline {subsection}{\numberline {4.3}FastText}{14}% 
 \contentsline {subsection}{\numberline {4.4}Weltwissen}{15}% 
-\contentsline {section}{\numberline {5}Sequence2Sequence}{15}% 
+\contentsline {subsection}{\numberline {4.5}Evaluation}{16}% 
+\contentsline {section}{\numberline {5}Sequence2Sequence}{16}% 
