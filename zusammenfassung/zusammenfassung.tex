@@ -53,9 +53,6 @@
 		\item Negative-Log-Likelihood, Cross-Entropy: $NLL = -\frac{1}{|D|}\sum_i \log[f_\theta(x_i)|_{t_i}]$
 	\end{itemize}
 	\textbf{Konfusionsmatrix} welche Klassen werden wie oft mit welcher Klasse verwechselt?\\
-	\textbf{Sentiment Analysis} Bewertung von Texten nach Gefühlsaussage des Autors (positiv, negativ, neutral)\\
-	\textbf{Text Generation} Führt vorgegebenen Text weiter. Perfekter Text Generator besteht Turing Test\\
-	\textbf{Machine Translation} machinelle Übersetzung\\
 	
 	\subsection{Training}
 	Daten werden aufgeteilt in Train/Validierung/Test (z.B. 60/20/20)\\
@@ -162,6 +159,8 @@
 	\textbf{Parameter} $d$: Dropout-Rate gibt den prozentualen Anteil der zu deaktivierenden Gewichte an.
 	\subsection{Convolutional}
 	Extrahiert Features aus einer Matrix. Wird oft in der Bildklassifizierung verwendet oder NLP zur Satzklassifikation (Kernel Größe der Embeddings $\times$ Anzahl betrachteter Wörter).\\
+	\textbf{Beispiel für NLP}\\
+	\includegraphics[width=\linewidth]{figures/convolution-nlp.png}\\
 	\textbf{Parameter}\\
 	$X \in \R^{h \times w \times d}$: Eingabe\\
 	$(fh, fw)$: Filtergröße\\
@@ -188,6 +187,7 @@
 	\includegraphics[width=\linewidth]{figures/max-pooling.png}\\
 	\textbf{Backward-Pass} Nur die Elemente, die im Forward-Pass an der Berechnung des Outputs beteiligt waren, bekommen anteilig oder ganz das Delta des jeweiligen Outputs.
 	$$\delta x_i = (x_i == max) ? \delta y : 0$$
+	\textbf{Maximum over time pooling} Übernimmt den größten Wert pro Outputvektor eines Filters
 	\subsection{Vanilla RNN}
 	Recurrent Neuronal Networks (RNNs) werden verwendet, um Daten unterschiedlicher Länge zu verarbeiten. Dabei wird ein Hidden State $h$ in jedem Schritt um Informationen der Eingabe ergänzt.\\
 	\textbf{Parameter}\\
@@ -283,21 +283,37 @@
 	\textbf{Intrinsisch} hand-annotierten Evaluationsdatensatz (Human Intuition Datasets HID, z.B. WS-353, MEN-3000, ...) mit Wortpaaren verwenden, der Ähnlichkeitsgrad vorhersagt, z.B. r(table, chair) $>$ r(duck, plane)\\
 	$\rightarrow$ Word Embeddings können auch auf HIDs nachtrainiert werden
 
+	\section{Anwendungsfelder für NLP}
+	\subsection{Textklassifikation}
+	\textbf{Sentimentanalyse} Ausgabe eines Stimmungswertes für einen Text meist zwischen -1 (negativ) und 1 (positiv).
 
-	\section{Sequence2Sequence}
-	Abbildung von Sequenzen auf Sequenzen, z.B. bei OCR (Eingabe: Pixelspalten, Ausgabe: Buchstabenklassifikation) oder Spracherkennung. Kann z.B. mit LSTMs umgesetzt werden.\\
-	\textbf{Greedy-Decoder} Ermittelt Klasse durch Maximum auf Ausgabe $\rightarrow$ Entfernen doppelter Zeichen $\rightarrow$ Blanks entfernen\\
-	\textbf{Labellings} Beschreibt die Abbilung der Netzausgabe auf sinnvolle Sequenz.
-	$$B: L'^{T} \rightarrow L^{\leq T}$$
-	$$B(a-ab-) = B(-aa--aabb) = aab$$
-	$$B^{-1}(aab) = {a-ab-, ..., aa-ab, ...}$$
-	Summiere die Wahrscheinlichkeiten aller möglichen Pfade, die zum gewünschten Label führen.\\
-	\textbf{CTC-Loss (Connectionist Temporal Classification)}\\
-	Wird angewendet, wenn die Eingabe eine Zeitsequenz der Länge $T$ ist und als Ausgabe eine unalignierte Labelsequenz der Länge $\leq T$ vorliegt\\
-	\includegraphics[width=\linewidth]{figures/ctc-algorithmus.png}
-	$$P(l|x) = \sum_{\pi \in B^{-1}(l)} P(\pi|x)$$
-	mit $l$ als gewünschte Sequenz und $x$ als Netzausgabe\\
-	\textit{Loss}: Maximiere $P(l|x)$ bzw. minimiere $-\log(P(l|x))$\\
+	\subsection{Textgenerierung}
+	Führt vorgegebenen Text weiter. Perfekter Text Generator besteht Turing Test
+	
+	\subsection{Machine Translation}
+	Maschinelle Übersetzung verwendet RNNs wodurch folgende Probleme entstehen:
+	\begin{itemize}
+		\item unterschiedliche Satzstellung bei verschiedenen Sprachen
+		\item ein Inputwort entspricht nicht gleich einem Outputwort (z.B. neben $\Rightarrow$ next to)
+	\end{itemize}
+	$\rightarrow$ \textbf{Encoder-Decoder-Architektur} liest gesamten Satz mit einem RNN ein und erzeugt mit anderem RNN die Ausgabe\\
+	\includegraphics[width=\linewidth]{figures/encoder-decoder-rnn.png}\\
+	\textbf{Teacher Forcing} Ausgabewort ist Eingabe für nächsten Decoderschritt. Um Fehler zu vermeiden, solle die Eingabe für den nächsten Schritt das vorherige Wort der Ground Truth sein.
 
-	% TODO weiter mit Kapitel 6
+	% weiter mit Kapitel 7, Folie 20
+
+	% \section{Sequence2Sequence}
+	% Abbildung von Sequenzen auf Sequenzen, z.B. bei OCR (Eingabe: Pixelspalten, Ausgabe: Buchstabenklassifikation) oder Spracherkennung. Kann z.B. mit LSTMs umgesetzt werden.\\
+	% \textbf{Greedy-Decoder} Ermittelt Klasse durch Maximum auf Ausgabe $\rightarrow$ Entfernen doppelter Zeichen $\rightarrow$ Blanks entfernen\\
+	% \textbf{Labellings} Beschreibt die Abbilung der Netzausgabe auf sinnvolle Sequenz.
+	% $$B: L'^{T} \rightarrow L^{\leq T}$$
+	% $$B(a-ab-) = B(-aa--aabb) = aab$$
+	% $$B^{-1}(aab) = {a-ab-, ..., aa-ab, ...}$$
+	% Summiere die Wahrscheinlichkeiten aller möglichen Pfade, die zum gewünschten Label führen.\\
+	% \textbf{CTC-Loss (Connectionist Temporal Classification)}\\
+	% Wird angewendet, wenn die Eingabe eine Zeitsequenz der Länge $T$ ist und als Ausgabe eine unalignierte Labelsequenz der Länge $\leq T$ vorliegt\\
+	% \includegraphics[width=\linewidth]{figures/ctc-algorithmus.png}
+	% $$P(l|x) = \sum_{\pi \in B^{-1}(l)} P(\pi|x)$$
+	% mit $l$ als gewünschte Sequenz und $x$ als Netzausgabe\\
+	% \textit{Loss}: Maximiere $P(l|x)$ bzw. minimiere $-\log(P(l|x))$\\
 \end{document}
