@@ -138,9 +138,9 @@ INPUT /Users/michaelgabler/Library/Application Support/MiKTeX/texmfs/install/fon
 INPUT /Users/michaelgabler/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /Users/michaelgabler/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /Users/michaelgabler/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-OUTPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.toc
 OUTPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.pdf
 INPUT /Users/michaelgabler/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/pdftex.map
+OUTPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.toc
 INPUT /Users/michaelgabler/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/omscmr.fd
 INPUT /Users/michaelgabler/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/omscmr.fd
 INPUT /Users/michaelgabler/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
@@ -225,6 +225,11 @@ INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfas
 INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/retrofitting.png
 INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/retrofitting.png
 INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/retrofitting.png
+INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/elmo.png
+INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/elmo.png
+INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/elmo.png
+INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/elmo.png
+INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/elmo.png
 INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/encoder-decoder-rnn.png
 INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/encoder-decoder-rnn.png
 INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/encoder-decoder-rnn.png
@@ -250,6 +255,11 @@ INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfas
 INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/transformer2.png
 INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/transformer2.png
 INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/transformer2.png
+INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/mqan.png
+INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/mqan.png
+INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/mqan.png
+INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/mqan.png
+INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/figures/mqan.png
 INPUT /Users/michaelgabler/Repositories/jmu-machine-learning-for-nlp/zusammenfassung/zusammenfassung.aux
 INPUT /Users/michaelgabler/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /Users/michaelgabler/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb

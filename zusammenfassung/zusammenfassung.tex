@@ -263,6 +263,8 @@
 	\subsection{GloVe (Global Vectors)}
 	Berechnung von Word Embeddings über eine Matrix $X$, die für einen Wortkorpus die Häufigkeiten angibt, mit der zwei Wörter zusammen auftreten. Verwendet globale Abhängigkeiten statt lokale wie bei Word2Vec.\\
 	Neue, unbekannte Wörter werden auf gleichen UNKNOWN-Vektor abgebildet (wie bei Word2Vec).
+	$$w_i^T \tilde{w_k} = \log(X_{ik}) - \log(X_i)$$
+	mit $X_{ij}$: Frequenz mit der das Wort $j$ im Kontext von $i$ vorkommt, $X_i = \sum_k X_{ik}$: Frequenz aller Wörter im Kontext von $i$
 
 	\subsection{FastText}
 	Funktioniert wie Word2Vec auf lokalem Kontext, aber verwendet Bustaben n-Gramme (Buchstabenketten der Länge $n$) statt ganze Wörter. Word Embeddings werden durch Aufsummieren der Vektoren ihrer n-Gramme erzeugt.\\
@@ -276,6 +278,13 @@
 	$$PMI(word_1, word_2) = \log_2 \frac{P(word_1, word_2)}{P(word_1)P(word_2)}$$
 	\textbf{ConceptNet Numberbatch} Anreichern von existierenden Embeddings (Word2Vec, GloVe oder FastText) mit Weltwissen aus ConceptNet $\rightarrow$ Abbildung durch neuronales Netz mit Retrofitting Loss-Funktion\\
 	\includegraphics[width=\linewidth]{figures/retrofitting.png}
+
+	\subsection{Variable Word Embeddings}
+	Word Embeddings, die sich je nach Kontext unterscheiden. Ein Wort hat nicht nur ein Embedding.\\
+	\textbf{ELMo} Trainiert ein Language Model, das nächstes Wort vorhersagt. Hidden States sind Embeddings. Dabei werden existierende Embeddings als Eingabe verwendet und je nach Kontext verfeinert.\\
+	\includegraphics[width=\linewidth]{figures/elmo.png}\\
+	\textbf{BERT} Gleiche Idee wie ELMo, verwendet aber Transformer statt LSTMs.\\
+	$\Rightarrow$ zukünftig vermutlich möglich ein Language Model zu trainieren und dieses auf den jeweiligen Task weiter zu trainieren. Somit keine Word Embedding mehr notwendig.
 
 	\subsection{Evaluation}
 	Mehrere Word Embeddings können auf verschiedene Weise miteinander verglichen werden.\\
@@ -314,28 +323,22 @@
 	\end{itemize}
 	\textbf{Transformer} neue neuronale Netzarchitektur auf Basis von Attention ohne RNNs $\rightarrow$ gut parallelisierbar\\
 	\includegraphics[width=0.5\linewidth]{figures/transformer1.png}
-	\includegraphics[width=0.5\linewidth]{figures/transformer2.png}
+	\includegraphics[width=0.3\linewidth]{figures/transformer2.png}
 	$$Attention(Q,K,V) = softmax(\frac{QK^T}{\sqrt{d}}) V$$
 	$$Q = X \cdot W_1, K = X \cdot W_2, V = X \cdot, W_3$$
 	Attention wird komplett aus Input berechnet, es wird eine gewichtete Summe des Inputs erzeugt\\
 	\textit{Multihead Attention} Berechne $Q$, $K$, $V$ mehrmals mit unterschiedlichen Gewichtsmatrizen $W_i$, um verschiedenen Fokus zu bekommen.\\
 	\textbf{Evolved Transformer} Netzarchitektur wird auch als neuronales Netz mittrainiert.
 
-	% TODO weiter mit Kapitel 8
+	\subsection{Namend Entity Recognition}
+	Extraktion von Merkmalen aus Texten wie Personen, Orte, Zeitangaben, etc. Umgesetzt über Tags für Wörter (z.B. Start-Person, Inside, End-Person, Outside, Singleton-Person)\\
+	ähnlich Part-of-Speech Tagging $\rightarrow$ Erkennen der Wortfunktionen im Kontext (Verb, Nomen, etc.)
 
+	\subsection{Syntactic Parsing}
+	Welche Wörter gehören zusammen? Was bezieht sich auf was? SyntaxNet von Google ist Open Source für diese Zwecke. Gibt Übergangswahrscheinlichkeiten aus. Vortrainierte Modelle für gesprochene Sprache verfügbar, z.B. Parsey McParseface für Englisch.
 
-	% \section{Sequence2Sequence}
-	% Abbildung von Sequenzen auf Sequenzen, z.B. bei OCR (Eingabe: Pixelspalten, Ausgabe: Buchstabenklassifikation) oder Spracherkennung. Kann z.B. mit LSTMs umgesetzt werden.\\
-	% \textbf{Greedy-Decoder} Ermittelt Klasse durch Maximum auf Ausgabe $\rightarrow$ Entfernen doppelter Zeichen $\rightarrow$ Blanks entfernen\\
-	% \textbf{Labellings} Beschreibt die Abbilung der Netzausgabe auf sinnvolle Sequenz.
-	% $$B: L'^{T} \rightarrow L^{\leq T}$$
-	% $$B(a-ab-) = B(-aa--aabb) = aab$$
-	% $$B^{-1}(aab) = {a-ab-, ..., aa-ab, ...}$$
-	% Summiere die Wahrscheinlichkeiten aller möglichen Pfade, die zum gewünschten Label führen.\\
-	% \textbf{CTC-Loss (Connectionist Temporal Classification)}\\
-	% Wird angewendet, wenn die Eingabe eine Zeitsequenz der Länge $T$ ist und als Ausgabe eine unalignierte Labelsequenz der Länge $\leq T$ vorliegt\\
-	% \includegraphics[width=\linewidth]{figures/ctc-algorithmus.png}
-	% $$P(l|x) = \sum_{\pi \in B^{-1}(l)} P(\pi|x)$$
-	% mit $l$ als gewünschte Sequenz und $x$ als Netzausgabe\\
-	% \textit{Loss}: Maximiere $P(l|x)$ bzw. minimiere $-\log(P(l|x))$\\
+	\subsection{Question Answering}
+	Fragen sollen durch neuronales Netz beantwortet werden (ähnlich zu Textgenerierung). Kann wenn gut trainiert für viele Tasks eingesetzt werden, da sich vieles als Frage und Antwort abbilden lässt.\\
+	\includegraphics[width=\linewidth]{figures/mqan.png}\\
+	\textbf{Residual Feedforward Network} $ResFFN(X) = \max(0, XU) V + X$\\
 \end{document}
