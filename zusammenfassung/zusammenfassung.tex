@@ -285,6 +285,7 @@
 
 	\section{Anwendungsfelder für NLP}
 	\subsection{Textklassifikation}
+	Abbilden eines Textes auf ein Label\\
 	\textbf{Sentimentanalyse} Ausgabe eines Stimmungswertes für einen Text meist zwischen -1 (negativ) und 1 (positiv).
 
 	\subsection{Textgenerierung}
@@ -298,9 +299,30 @@
 	\end{itemize}
 	$\rightarrow$ \textbf{Encoder-Decoder-Architektur} liest gesamten Satz mit einem RNN ein und erzeugt mit anderem RNN die Ausgabe\\
 	\includegraphics[width=\linewidth]{figures/encoder-decoder-rnn.png}\\
-	\textbf{Teacher Forcing} Ausgabewort ist Eingabe für nächsten Decoderschritt. Um Fehler zu vermeiden, solle die Eingabe für den nächsten Schritt das vorherige Wort der Ground Truth sein.
+	\textbf{Teacher Forcing} Ausgabewort ist Eingabe für nächsten Decoderschritt. Um Fehler zu vermeiden, solle die Eingabe für den nächsten Schritt das vorherige Wort der Ground Truth sein.\\
+	$\rightarrow$ sollte nur zu Beginn des Trainings verwendet werden, dann Wort der vorherigen Vorhersage, da Netzwerk sich sonst darauf verlässt etwas richtiges zu bekommen\\
+	\textbf{Greedy Search} immer wahrscheinlichstes Wort nehmen\\
+	\textbf{Beam Search} betrachte die $B$ Sequenzen mit der höchsten Wahrscheinlichkeit und entscheide später für die beste ($B = 1 \rightarrow$ Greedy-Search)\\
+	\includegraphics[width=\linewidth]{figures/beam-search.png}\\
+	\textbf{BiRNN} zwei RNNs im Encoder, die Sequenz vorwärts bzw. rückwärts bekommen. Letzter State beider RNNs wird konkatiniert und ist Encoder State.\\
+	\textbf{Attention Mechanismus} einzelner State nach Encoder ist Informationsbottleneck $\rightarrow$ verwende alle Hidden States des Decoders gewichtet als Input für jeden Decoderschritt. Der Decoder-Hidden-State gibt die Gewichtung/Attention vor.\\
+	\includegraphics[width=\linewidth]{figures/attention.png}\\
+	\textbf{Evaluation von Übersetzung} Es gibt keine Single Source of Truth (mehrere Übersetzungen möglich und korrekt)
+	\begin{itemize}
+		\item Unigram Precision: $s = \frac{m}{w_t}$, $m$ Wörter die in Ground Truth und Ausgabe auftreten, $w_t$ Länge der Maschinenübersetzung
+		\item Bilingual evaluation understudy (BLEU): arbeitet auf n-Grammen (Wortketten), limitiert Anzahl auf Vorkommen in Zielübersetzung, wird gegen mehrere mögliche Übersetzungen evaluiert und Score gemittelt
+	\end{itemize}
+	\textbf{Transformer} neue neuronale Netzarchitektur auf Basis von Attention ohne RNNs $\rightarrow$ gut parallelisierbar\\
+	\includegraphics[width=0.5\linewidth]{figures/transformer1.png}
+	\includegraphics[width=0.5\linewidth]{figures/transformer2.png}
+	$$Attention(Q,K,V) = softmax(\frac{QK^T}{\sqrt{d}}) V$$
+	$$Q = X \cdot W_1, K = X \cdot W_2, V = X \cdot, W_3$$
+	Attention wird komplett aus Input berechnet, es wird eine gewichtete Summe des Inputs erzeugt\\
+	\textit{Multihead Attention} Berechne $Q$, $K$, $V$ mehrmals mit unterschiedlichen Gewichtsmatrizen $W_i$, um verschiedenen Fokus zu bekommen.\\
+	\textbf{Evolved Transformer} Netzarchitektur wird auch als neuronales Netz mittrainiert.
 
-	% weiter mit Kapitel 7, Folie 20
+	% TODO weiter mit Kapitel 8
+
 
 	% \section{Sequence2Sequence}
 	% Abbildung von Sequenzen auf Sequenzen, z.B. bei OCR (Eingabe: Pixelspalten, Ausgabe: Buchstabenklassifikation) oder Spracherkennung. Kann z.B. mit LSTMs umgesetzt werden.\\
